@@ -24,7 +24,7 @@
     border-radius: 8px;
 
   }
-  main{
+  main, footer{
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 130px;
@@ -123,10 +123,42 @@
 
   
 
- /*  */
+ /*emjou your life*/
 
+ .injoy{
+    display: flex;
+    gap: 140px;
+    /* border: 2px solid red; */
+ }
+ .enjoy-title{
+    padding-left: 20px;
+    border-left: 5px solid #FF900E;
+ }
+.enjoy-box{
+    box-shadow: 0 4px 30px rgba(0, 0, 0,0.06);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.enjoy-image{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.enjoy-box h4{
+    margin: 15px 0;
+}
 
+.badje-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
 
+.enjoy-badje{
+    margin-left: -100px;
+    margin-top: -100px;
+}
  /* fact */
  
  .fact-continer{
@@ -172,11 +204,53 @@
  .card h5{
     margin: 10px 0;
  }
+/* sponsor style */
 
+.sponsor-container{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sponsor-image{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 50px;
+}
+.sponsor-image img{
+    filter: grayscale(100%);
+}
+
+/* footer */
+
+footer{
+    background-color: #FFF4E7;
+    height: 80px;
+    margin: 0 60px;
+    max-width: 1440px;
+    text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 100px;
+}
 
 /* responsive for movile */
 
 @media screen and (max-width:576px) {
+    footer{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .injoy{
+        flex-direction: column;
+    }
+    .sponsor-image{
+        grid-template-columns: 1fr;
+        gap: 60px;
+        padding: 10px;
+    }
     .card-box{
         grid-template-columns:1fr;
     }
@@ -213,6 +287,14 @@
  /* medium device */
 
 @media screen and (min-width:577px) and (max-width:992px) {
+    .injoy{
+        flex-direction: column;
+    }
+    .sponsor-image{
+        grid-template-columns: repeat(2,1fr);
+        gap: 60px;
+        padding: 20px;
+    }
     .freature-container, .navber{
         flex-direction: column;
     }
