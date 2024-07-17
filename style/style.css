@@ -233,6 +233,7 @@ footer{
    align-items: center;
    justify-content: center;
    margin-top: 100px;
+   border-radius: 5px;
 }
 
 /* responsive for movile */
